@@ -34,3 +34,17 @@ node_modules
 config/runtime.yaml
 
 .DS_Store
+
+# Exclure les dépendances node_modules pour backend et client
+/backend/node_modules
+/client/node_modules
+
+# Exclure le fichier d'environnement contenant des secrets API
+/backend/.env
+
+# Exclure le cache de Vite (optimisation du frontend)
+.client/.vite
+
+# Exclure les fichiers de build
+/backend/build
+/client/dist
